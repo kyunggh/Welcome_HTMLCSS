@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      @keyframes rainbow {
+        0% {
+          color: red;
+        }
+        14% {
+          color: orange;
+        }
+        28% {
+          color: yellow;
+        }
+        42% {
+          color: green;
+        }
+        56% {
+          color: blue;
+        }
+        70% {
+          color: indigo;
+        }
+        84% {
+          color: violet;
+        }
+        100% {
+          color: red;
+        }
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0; /* 배경색 설정 */
+      }
+
+      h1 {
+        font-family: Arial, sans-serif;
+        font-size: 10vw; /* 화면 가로폭의 10% 크기로 조정 */
+        text-align: center;
+        animation: rainbow 4s infinite, zoom 4s infinite; /* 반짝임 효과와 확대 효과 */
+      }
+
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        } /* 50%까지 확대 */
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</html>
