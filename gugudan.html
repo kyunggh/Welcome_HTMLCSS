@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gugudan</title>
+    <style>
+      h1 {
+        font-size: 30px;
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      function gugudan(n) {
+        let gugudanresult = '';
+        for (let i = 1; i <= 9; i++) {
+          gugudanresult += n + 'X' + i + '=' + n * i + '<br>';
+        }
+        document.getElementById('result').innerHTML = gugudanresult;
+      }
+    </script>
+
+    <h1>구구단</h1>
+    <div>
+      <button onclick="gugudan(1)">1단</button>
+      <button onclick="gugudan(2)">2단</button>
+      <button onclick="gugudan(3)">3단</button>
+      <button onclick="gugudan(4)">4단</button>
+      <button onclick="gugudan(5)">5단</button>
+      <button onclick="gugudan(6)">6단</button>
+      <button onclick="gugudan(7)">7단</button>
+      <button onclick="gugudan(8)">8단</button>
+      <button onclick="gugudan(9)">9단</button>
+    </div>
+
+    <div id="result"></div>
+  </body>
+</html>
